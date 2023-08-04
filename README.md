@@ -1,6 +1,14 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
+## Basic Website Layout Using Mui and Css
+
+check this link https://karan4g.github.io/basic_layout/
+
+Create .env.local (used only when you work on local)
+NEXT_PUBLIC_IS_LOCAL="YES"
+
+node version 18.26
 
 First, run the development server:
 
