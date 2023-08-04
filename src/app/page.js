@@ -36,11 +36,11 @@ export default function Home() {
   
   return (
     <main>
-    <WideImageSection ImageUrl={(isLocal) ?"/images/wideimage.jpg" : "./images/wideimage.jpg"}/> 
-    <ImageAndText ImageUrl={(isLocal) ? "/images/section1.jpg" : "./images/section1.jpg"} />
+    <WideImageSection ImageUrl={(isLocal) ?"/images/wideimage.jpg" : "./images/wideimage.jpg"} heading="Home"/> 
+    <ImageAndText ImageUrl={(isLocal) ? "/images/section1.jpg" : "./images/section1.jpg"} heading="Section 1" />
 
     <ImageAndText ImageUrl={(isLocal) ?"/images/section1.jpg":"./images/section1.jpg"} IsReverse={true} sectionId="section2" heading="Section 2" />
-    <ImageCarousle CorousleImages={CorousleImages}/>
+    <ImageCarousle CorousleImages={CorousleImages} heading="Section 3"/>
     </main>
   )
 }

@@ -21,6 +21,9 @@ import SearchIcon from '@mui/icons-material/Search';
   // },  
 });
 
+const isLocal=process.env.NEXT_PUBLIC_IS_LOCAL || "";
+
+
 export default function DesktopMenu(props){
     const {MenuItems,desktopID}=props;
 
@@ -33,13 +36,15 @@ export default function DesktopMenu(props){
     return (
       <ThemeProvider theme={theme}>
         <Grid container id={desktopID} className="menu-grid" spacing={0}>
-        <Grid className="header-menu-grid" item xs={1}>
-        <Image className="site-logo" src="/images/logo.svg" alt="Home Logo" height="30" width="30" />
-        </Grid>
-        <Grid className="header-menu-grid" item xs={1}>
+        <Grid className="header-menu-grid" item xs={2}>
+          <div className="site-logo-parent">
+        <Image className="site-logo" src={(isLocal) ? "/images/logo.svg" : "./images/logo.svg"} alt="Home Logo" height="30" width="30" />
+        {/* </Grid>
+        <Grid className="header-menu-grid" item xs={1}> */}
         <Typography  variant="h5">
           My Site
           </Typography>
+          </div>
           </Grid>
         <Grid className="header-menu-grid" item xs={8}>
         {MenuItems && MenuItems.length ?
@@ -54,17 +59,19 @@ export default function DesktopMenu(props){
     : null
 }
       </Grid>
-      <Grid className="header-menu-grid" item xs={1}>
+      <Grid className="header-menu-grid" item xs={2}>
+        <div className="search-bar-parent">
       <TextField
           required
           id="outlined-required"
           label="Search"
         />
-        </Grid>
-        <Grid className="header-menu-grid" item xs={1}>
+        {/* </Grid> *
+         <Grid className="header-menu-grid" item xs={1}> */}
         <Button className="menu-search-button" size="large" variant="outlined">
           <SearchIcon/>
           </Button>
+          </div>
         </Grid>
       </Grid>
       </ThemeProvider>

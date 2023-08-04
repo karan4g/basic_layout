@@ -3,9 +3,10 @@ import React,{useEffect} from "react";
 import Grid from "@mui/material/Grid";
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+import { Typography } from "@mui/material";
 
 export default function ImageCarousle(props) {
-  const { CorousleImages } = props;
+  const { CorousleImages,heading="Section 3" } = props;
   
 
   useEffect(()=>{
@@ -150,6 +151,9 @@ function makeCarousel(frame) {
 
   return (
     <Grid id="section3" container className={`sections`} spacing={2}>
+      <Grid item xs={12}>
+      <Typography className="image-and-text-heading"  variant="h2">{heading}</Typography>
+      </Grid>
       <Grid item xs={12}>
       <div className="carousel-frame">
           <div className="carousel-slide">
