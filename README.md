@@ -3,6 +3,8 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 ## Getting Started
 ## Basic Website Layout Using Mui and Css
 
+##Reuseable Components and image carousel
+
 check this link https://karan4g.github.io/basic_layout/
 
 Create .env.local (used only when you work on local)
@@ -40,3 +42,7 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+![d](https://github.com/karan4g/basic_layout/assets/77822406/972a9220-a9ee-47b4-bcae-70a211cacea0)
+
+![Create Next App](https://github.com/karan4g/basic_layout/assets/77822406/8d4e172e-8193-48ad-b153-b4c15c9dce39)
