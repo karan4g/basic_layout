@@ -14,7 +14,7 @@ export default function ImageAndText(props) {
     >
       <Grid item xs={12}
       >
-<Typography class="image-and-text-heading"  variant="h2">{heading}</Typography>
+<Typography className="image-and-text-heading"  variant="h2">{heading}</Typography>
 
       </Grid>
       <Grid item xs={6}>

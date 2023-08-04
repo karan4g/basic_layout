@@ -159,8 +159,6 @@ function makeCarousel(frame) {
                 })
               : ""}
           </div>
-          {/* <i class="carousel-prev fas fa-chevron-left"></i>
-          <i class="carousel-next fas fa-chevron-right"></i> */}
           <ArrowBackIosIcon className="carousel-prev" />
           <ArrowForwardIosIcon className="carousel-next" />
           <ol className="carousel-dots">
@@ -176,25 +174,4 @@ function makeCarousel(frame) {
   );
 }
 
-{
-  /* <div class="carousel-frame">
-  <div class="carousel-slide">
-    <img src="https://raw.githubusercontent.com/asbelljc/carousel-builder/main/sample/Images/abstract.jpg" />
-    <img src="https://raw.githubusercontent.com/asbelljc/carousel-builder/main/sample/Images/animal.jpg" />
-    <img src="https://raw.githubusercontent.com/asbelljc/carousel-builder/main/sample/Images/architecture.jpg" />
-    <img src="https://raw.githubusercontent.com/asbelljc/carousel-builder/main/sample/Images/leaf.jpg" />
-    <img src="https://raw.githubusercontent.com/asbelljc/carousel-builder/main/sample/Images/space.jpg" />
-    <img src="https://raw.githubusercontent.com/asbelljc/carousel-builder/main/sample/Images/twig.jpg" />
-  </div>
-  <i class="carousel-prev fas fa-chevron-left"></i>
-  <i class="carousel-next fas fa-chevron-right"></i>
-  <ol class="carousel-dots">
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-  </ol>
-</div> */
-}
+

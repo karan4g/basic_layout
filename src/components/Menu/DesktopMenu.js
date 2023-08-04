@@ -34,7 +34,7 @@ export default function DesktopMenu(props){
       <ThemeProvider theme={theme}>
         <Grid container id={desktopID} className="menu-grid" spacing={0}>
         <Grid className="header-menu-grid" item xs={1}>
-        <Image class="site-logo" src="/images/logo.svg" alt="Home Logo" height="30" width="30" />
+        <Image className="site-logo" src="/images/logo.svg" alt="Home Logo" height="30" width="30" />
         </Grid>
         <Grid className="header-menu-grid" item xs={1}>
         <Typography  variant="h5">
