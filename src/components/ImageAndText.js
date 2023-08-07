@@ -17,7 +17,7 @@ export default function ImageAndText(props) {
 <Typography className="image-and-text-heading"  variant="h2">{heading}</Typography>
 
       </Grid>
-      <Grid item xs={6}>
+      <Grid item xs={12} md={6}>
         <div
           className="custombackground-image"
           style={{
@@ -27,7 +27,7 @@ export default function ImageAndText(props) {
           <span></span>
         </div>
       </Grid>
-      <Grid item xs={6}>
+      <Grid item xs={12} md={6}>
         <Typography className="paragraph" paragraph={true}>
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever

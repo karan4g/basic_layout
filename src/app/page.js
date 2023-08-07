@@ -2,6 +2,13 @@ import Image from 'next/image'
 import WideImageSection from "../components/WideImageSection"
 import ImageAndText from "../components/ImageAndText"
 import ImageCarousle from "../components/ImageCarousle"
+import Head from 'next/head'
+import { Metadata } from 'next'
+ 
+export const metadata = {
+  title: 'Sample Layout',
+}
+
 
 export default function Home() {
 
