@@ -1,4 +1,4 @@
-#head-contain {
+#head-contain,#head-contain-mobile {
   z-index: 99;
   background-color: #d6d0d0;
 }
@@ -20,6 +20,15 @@ body{
   margin: 30px !important;
   color:#03306a;
 }
+#head-contain .search-bar-parent .MuiInputLabel-animated[data-shrink="false"]{
+  top:-5px;
+ }
+
+#head-contain .search-bar-parent .MuiInputLabel-animated[data-shrink="true"]{
+  color:#03306a;
+  font-weight:900;
+  /* font-size:18px; */
+ }
 /* #head-contain .MuiTextField-root ,#head-contain .menu-search-button */
 #head-contain .site-logo,#head-contain .MuiTypography-h5,#head-contain .search-bar-parent{
   margin: 30px 0 30px 0 !important;
@@ -28,7 +37,11 @@ body{
 
 #head-contain .search-bar-parent{
   display:flex;
+  justify-content: center;
 }
+/* #head-contain .search-bar-parent .MuiInputLabel-animated[data-shrink="true"]{
+  display:none;
+} */
 #head-contain .MuiTextField-root{
   float:left;
 }
@@ -39,7 +52,7 @@ body{
 #head-contain .MuiTextField-root{
 background-color: white;
 border: 1px solid #03306a;
-border-radius:5px;
+border-radius:5px 0px 0px 5px;
 }
 #head-contain .MuiTextField-root input{
 font-size:12px;
@@ -58,6 +71,7 @@ body,
 #head-contain .MuiGrid-item,
 .sections .MuiGrid-item {
   margin: 0;
+  padding:0;
 }
 /* #head-contain .MuiGrid-item:first-child { 
   text-align:right;
@@ -68,7 +82,7 @@ body,
 
 #head-contain .menu-search-button{
   border:1px solid #03306a;
-  border-radius:5px;
+  border-radius:0 5px 5px 0 !important;
   background-color:#03306a;
   color:white
 }
@@ -210,6 +224,52 @@ height: 100%;
 .image-and-text-heading{
   text-align:center;
 }
-.footer-grid{
+/* .footer-grid{
   margin:10px 0 0 0;
+} */
+.mobile-menu-bar-parent{
+  padding:30px 0 30px 0 !important;
+  display:flex;
+  float:right;
+}
+.mobile-menu-bar-parent button{
+  color:#03306a;
+}
+@media (max-width:1600px) and (min-width:1200px){
+#head-contain .search-bar-parent{
+  margin: 30px 10px 30px 0 !important;
+  color:#03306a;
+}
+}
+@media (max-width:1200px){
+  #head-contain .site-logo-parent{
+    float:none;
+    justify-content:center;
+  }
+  #head-contain .search-bar-parent .MuiInputLabel-animated[data-shrink="false"]{
+   top:-10px;
+  }
+  .custombackground-image {
+    min-height: 300px;
+width:80%;
+  }
+  .sections .MuiTypography-paragraph{
+    max-width:80%;
+  }
+}
+@media (max-width:900px){
+  .site-logo-parent .MuiTypography-h5 {
+    font-size:1.3rem;
+  }
+  #head-contain .menu-search-button{
+min-width:20px !important;
+  }
+  .sections .MuiGrid-item {
+    padding:10px 0 10px 0 !important;
+  }
+}
+@media (max-width:400px){
+  .site-logo-parent .MuiTypography-h5 {
+    display:none;
+  }
 }
